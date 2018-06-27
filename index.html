@@ -105,15 +105,32 @@
 						<button id="sendForm">Отправить</button>
 					</form>
 				</div>
-				<div class="col-12 text-center">
-					<p>© 2018 ООО " Горводоканал" </p>
+			</div>
+		</div>
+	</section>
+
+	<section id="copyright">
+		<div class="row">
+			<div class="container">
+				<div class="col-12 col-sm-6">
+					Россия, 440000,
+г. Пенза, Пензенская обл.,
+ул. Кривозерье, 24
+				</div>
+				<div class="col-12 col-sm-6 text-right">
+					&copy; 2018 ООО " Горводоканал"
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script>
+		$('#down').on('click',function(){
+			$("html, body").animate({scrollTop: $('#history').offset().top}, 400);
+		});
+	</script>
 </body>
 </html>
